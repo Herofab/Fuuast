@@ -12,15 +12,15 @@ namespace fuuast.Controllers
     [ApiController]
     public class feeStructureController : Controller
     {
-        private readonly Models.DbContext _context;
-        private readonly IConfiguration _config;
+            private readonly Models.DbContext _context;
+            private readonly IConfiguration _config;
         
        
-        public feeStructureController(DbContext context, IConfiguration config)
-        {
-            _context = context;
-            _config = config; // Ensure IConfiguration is injected here
-        }
+            public feeStructureController(DbContext context, IConfiguration config)
+            {
+                _context = context;
+                _config = config; // Ensure IConfiguration is injected here
+            }
         [Authorize]
         [HttpPost("Addfeestructure")]
         public async Task<object> Addfeestructure([FromBody] feestructure feestruct)
@@ -40,6 +40,8 @@ namespace fuuast.Controllers
                     // Proceed with adding the user
                     if (feestruct.Id == 0)
                     {
+                        feestruct.Id = 0;
+                        feestruct.practiceId = practiceId;
                         feestruct.createdBy = userName;
                         feestruct.createdDate = DateTime.Now;
                         feestruct.inactive = false;

@@ -1,6 +1,6 @@
 ﻿namespace fuuast.Models
 {
-    public class Students_Form
+    public class StudentsForm
     {
         public int? Id { get; set; }
         public int? practiceId { get; set; }

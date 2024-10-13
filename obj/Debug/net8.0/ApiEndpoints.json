@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "fuuast.Controllers.DepartmentController",
+    "Method": "AddDepartment",
+    "RelativePath": "AddDepartment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "depart",
+        "Type": "fuuast.Models.departments",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "fuuast.Controllers.feeStructureController",
     "Method": "Addfeestructure",
     "RelativePath": "api/feeStructure/Addfeestructure",
@@ -13,6 +29,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "fuuast.Controllers.feeStructureController",
+    "Method": "Getfeestructure",
+    "RelativePath": "api/feeStructure/Getfeestructure",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

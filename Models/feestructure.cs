@@ -1,4 +1,7 @@
-﻿namespace fuuast.Models
+﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace fuuast.Models
 {
     public class  feestructure    
     {

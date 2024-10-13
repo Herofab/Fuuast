@@ -11,6 +11,8 @@ namespace fuuast.Models
         public string type { get; set; }
         public string createdBy { get; set; }
         public DateTime? createdDate { get; set; }
+        public string updatedBy { get; set; }
+        public DateTime? updatedDate { get; set; }
         public bool? inactive { get; set; }
 
     }
